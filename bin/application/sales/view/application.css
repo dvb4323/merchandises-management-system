@@ -1,0 +1,45 @@
+.header {
+    -fx-border-radius: 0 0 0 0;
+    -fx-border-color: #16243D;
+    -fx-border-width: 0 0 0.1 0;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+
+.sider {
+    -fx-background-radius: 20 0 0 20;
+    -fx-border-color: #16243D;
+    -fx-border-width: 0.1px;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+}
+
+.containerVBox {
+    -fx-background-color: #FFFF;
+    -fx-border-color: #F5F5F5;
+    -fx-border-width: 0.03px;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+.buttonVBox {
+    -fx-background-color: #0BAB25;
+   -fx-border-color:  #0BAB25;
+    -fx-border-width: 0.03px;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+.containerHBox {
+    -fx-background-color: #FFFF;
+    -fx-border-color: #F5F5F5;
+    -fx-border-width: 0.03px;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+.single {
+    -fx-border-width: 0 0 0.1 0; 
+    -fx-border-color: #000000;  
+}
+
+.parent-stage-with-popup {
+    -fx-background-color: rgba(0, 0, 255, 0.5); /* Màu xanh với độ trong suốt 0.5 */
+}

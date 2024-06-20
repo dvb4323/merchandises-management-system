@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="759.0">
+         <children>
+            <Label fx:id="stt" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="50.0" text="STT">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="5.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="merchandiseCode" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="Mã mặt hàng ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="6.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="merchandiseName" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="106.0" text="Tên mặt hàng">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="3.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="quantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="74.0" text="Số lượng">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="4.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="unit" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" text="Đơn vị">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="5.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="desiredDeliveryDate" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="176.0" text="Ngày nhận mong muốn">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

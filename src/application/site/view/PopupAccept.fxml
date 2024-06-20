@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="189.0" prefWidth="350.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="100.0" layoutY="-7.0" prefHeight="75.0" prefWidth="149.0" text="Xử lí đơn hàng">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="rejectOrderButton" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="123.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #d9f5e1; -fx-background-radius: 30;" text="HUỶ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="acceptOrderButton" alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="123.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #d9f5e1; -fx-background-radius: 30;" text="ĐỒNG Ý">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="68.0" text="Bạn hãy xác nhận huỷ hoặc đồng ý đơn hàng">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <VBox fx:id="cancelButton" layoutX="317.0" layoutY="14.0" prefHeight="16.0" prefWidth="32.0">
+         <children>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #d9f5e1;">
+               <image>
+                  <Image url="@image/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

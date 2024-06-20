@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #E8E4E4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_RIGHT" prefHeight="77.0" prefWidth="550.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="37.0" />
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="555.0" text="Nhập thông tin mặt hàng">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="29.0" layoutY="185.0" prefHeight="30.0" prefWidth="235.0" text="Số lượng                       : " textFill="#514f4f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="118.0" prefHeight="27.0" prefWidth="235.0" text="Ngày nhận mong muốn   : " textFill="#514f4f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date" layoutX="275.0" layoutY="116.0" prefHeight="30.0" prefWidth="223.0" style="-fx-border-radius: 7px;" />
+      <Label fx:id="saveButton" alignment="CENTER" layoutX="316.0" layoutY="273.0" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #5EC26E; -fx-background-radius: 10;" text="Lưu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cancelButton" alignment="CENTER" layoutX="129.0" layoutY="273.0" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #5EC26E; -fx-background-radius: 10;" text="Hủy" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantity" layoutX="275.0" layoutY="185.0" prefHeight="30.0" prefWidth="223.0" />
+      <!-- Thêm Label cho thông báo lỗi -->
+      <Label fx:id="errorMessageLabel" layoutX="272.0" layoutY="224.0" prefHeight="27.0" prefWidth="235.0" textFill="#ff2200ef">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

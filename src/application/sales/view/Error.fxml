@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="112.0" layoutX="225.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/error.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e74848" layoutX="136.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vui lòng nhập lại thông tin" wrappingWidth="310.13673400878906">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="498.0" layoutY="14.0" prefHeight="31.0" prefWidth="37.0">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="42.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic></Label>
+   </children>
+</AnchorPane>

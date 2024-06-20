@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1150.0" style="-fx-background-color: F5F5F5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="215.0" layoutY="1.0" prefHeight="60.0" prefWidth="935.0">
+         <children>
+            <AnchorPane prefHeight="60.0" prefWidth="825.0" style="-fx-background-color: #D9F5E1;" styleClass="header" stylesheets="@../../view/application.css">
+               <children>
+                  <Label layoutX="15.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" text="Chi tiết danh sách đơn cần lưu" textFill="#06181feb">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label layoutX="769.0" layoutY="32.0" text="Bộ phận quản lý kho">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="242.0" layoutY="178.0" prefHeight="30.0" prefWidth="860.0" style="-fx-background-color: #D9F5E1;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="29.0" text="STT">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="122.0" text="Mã mặt hàng">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="126.0" text="Ngày nhận dự kiến">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="92.0" text="Cần nhận">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="58.0" text="  Đơn vị">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="109.0" text="Trạng thái ">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="106.0" text="Nhập hàng">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="84.0" text="Số lượng nhận">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="listItem" layoutX="242.0" layoutY="219.0" prefHeight="416.0" prefWidth="860.0" style="-fx-background-color: F5F5F5;" styleClass="containerVBox" stylesheets="@../../view/application.css" />
+      <VBox fx:id="vpage" layoutX="911.0" layoutY="639.0" prefHeight="20.0" prefWidth="190.0" />
+      <Label contentDisplay="CENTER" layoutX="242.0" layoutY="77.0" prefHeight="35.0" prefWidth="126.0" text="Mã danh sách :" textFill="#06181f">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderID" contentDisplay="CENTER" layoutX="377.0" layoutY="77.0" prefHeight="35.0" prefWidth="190.0" text="MH001" textFill="#023d54">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="242.0" layoutY="112.0" prefHeight="35.0" prefWidth="126.0" text="Site cung ứng :" textFill="#06181f">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="siteCode" contentDisplay="CENTER" layoutX="377.0" layoutY="112.0" prefHeight="35.0" prefWidth="100.0" textFill="#023d54">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="609.0" layoutY="69.0" prefHeight="35.0" prefWidth="158.0" text="Số lượng mặt hàng  :" textFill="#06181f">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfItem" contentDisplay="CENTER" layoutX="760.0" layoutY="69.0" prefHeight="35.0" prefWidth="100.0" textFill="#023d54">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="609.0" layoutY="112.0" prefHeight="35.0" prefWidth="158.0" text="Ngày tạo                   :" textFill="#06181f">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" contentDisplay="CENTER" layoutX="760.0" layoutY="112.0" prefHeight="35.0" prefWidth="128.0" text="Đang vận chuyển" textFill="#023d54">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="backToPrePageButton" alignment="CENTER" contentDisplay="CENTER" layoutX="469.0" layoutY="659.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 100; -fx-background-color: #D9F5E1;" text="Về trang trước">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="saveOrderButton" alignment="CENTER" contentDisplay="CENTER" layoutX="692.0" layoutY="659.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 100; -fx-background-color: #D9F5E1;" text="Lưu hàng về kho">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: #D9F5E1;" styleClass="sider" stylesheets="@../../sales/view/application.css">
+         <children>
+            <VBox layoutY="211.0" prefHeight="163.0" prefWidth="215.0" spacing="30.0">
+               <children>
+                  <Label fx:id="orderListButton" prefHeight="50.0" prefWidth="219.0" style="-fx-background-color: #A7E8BD; -fx-background-radius: 5;" text="Danh sách đơn hàng" textFill="#06181feb">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="merchandiseListButton" prefHeight="50.0" prefWidth="219.0" text="Danh sách mặt hàng" textFill="#06181fea">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="107.0" prefWidth="215.0">
+               <children>
+                  <Label layoutX="86.0" layoutY="22.0" prefHeight="43.0" prefWidth="108.0" text="DAPAT" textFill="#3a5b27">
+                     <font>
+                        <Font name="Arial Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="106.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../view/img/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="8.0" layoutY="639.0" onMouseClicked="#logout" prefHeight="46.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../sales/view/images/logout.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

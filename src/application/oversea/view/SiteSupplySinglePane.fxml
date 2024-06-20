@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="980.0" styleClass="single" stylesheets="@application.css">
+         <children>
+            <Label fx:id="stt" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="50.0" text="1">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <Label fx:id="siteID" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" text="S12345">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <Label fx:id="siteName" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="Site A">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <Label fx:id="stock" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" text="50">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <Label fx:id="unit" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" text="chiếc" />
+            <VBox prefHeight="40.0" prefWidth="20.0" />
+            <Label fx:id="shipArriveDate" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="21/12/2023">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <Label fx:id="airArriveDate" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="24/12/2012">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <CheckBox fx:id="orderCheckBox" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="120.0">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </CheckBox>
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <TextField fx:id="quantity" alignment="CENTER" prefWidth="100.0" styleClass="btn" stylesheets="@application.css" visible="false" />
+            <VBox prefHeight="40.0" prefWidth="20.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+            <ComboBox fx:id="mean" prefWidth="140.0" styleClass="custom-combobox" stylesheets="@application.css" visible="false">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></ComboBox>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="860.0">
+         <children>
+            <Label fx:id="stt" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="87.0" text="1">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="merchandiseCode" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="164.0" text="MH001">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;" />
+            <Label fx:id="merchandiseName" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="142.0" text="Quần bò" />
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="quantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="118.0" text="10" />
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;" />
+            <Label fx:id="unit" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="116.0" text="chiếc">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: F5F5F5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="mean" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="135.0" text="Tàu">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

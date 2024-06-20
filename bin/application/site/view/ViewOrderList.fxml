@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1150.0" style="-fx-background-color: F5F5F5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="215.0" layoutY="1.0" prefHeight="60.0" prefWidth="935.0">
+         <children>
+            <AnchorPane prefHeight="86.0" prefWidth="983.0" style="-fx-background-color: #D9F5E1;" styleClass="header" stylesheets="@application.css">
+               <children>
+                  <Label layoutX="779.0" layoutY="32.0" text="Bộ phận site cung ứng">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" text="Danh sách đơn hàng" textFill="#06181feb">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="216.0" layoutY="61.0" prefHeight="643.0" prefWidth="935.0">
+         <children>
+            <VBox fx:id="listItem" layoutX="92.0" layoutY="110.0" prefHeight="460.0" prefWidth="700.0" styleClass="containerVBox" stylesheets="@application.css" />
+            <AnchorPane layoutX="92.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="700.0">
+               <children>
+                  <HBox alignment="CENTER" layoutY="4.0" prefHeight="30.0" prefWidth="700.0" styleClass="containerVBox" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="stt" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="50.0" text="STT">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: f5f5f5;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <Label fx:id="orderId" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="Mã đơn hàng">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: f5f5f5;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <Label fx:id="quantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Số lượng mặt hàng">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: f5f5f5;" />
+                        <Label fx:id="orderListStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="130.0" text="Trạng thái" />
+                        <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: f5f5f5;" />
+                        <Label fx:id="action" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="108.0" text="Xem chi tiết">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="666.0" layoutY="470.0" prefHeight="40.0" prefWidth="200.0" />
+            <AnchorPane layoutX="92.0" layoutY="28.0" prefHeight="38.0" prefWidth="833.0">
+               <children>
+                  <AnchorPane prefHeight="35.0" prefWidth="238.0">
+                     <children>
+                        <TextField fx:id="search" prefHeight="36.0" prefWidth="250.0" promptText="Tìm kiếm theo mã danh sách" styleClass="btn" stylesheets="@../../oversea/view/application.css" />
+                        <ImageView fitHeight="19.0" fitWidth="16.0" layoutX="228.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../view/img/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ComboBox fx:id="selectStatus" layoutX="291.0" layoutY="1.0" prefHeight="35.0" prefWidth="250.0" promptText="Chọn trạng thái đơn hàng" styleClass="btn" stylesheets="@../../oversea/view/application.css" />
+                  <Button fx:id="search_btn" layoutX="591.0" layoutY="1.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" stylesheets="@../../oversea/view/application.css" text="Tìm kiếm" textFill="#efdbdb">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="search_btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="vpage" layoutX="883.0" layoutY="636.0" prefHeight="20.0" prefWidth="126.0" />
+      <AnchorPane prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: #D9F5E1;" styleClass="sider" stylesheets="@../../oversea/view/application.css">
+         <children>
+            <AnchorPane prefHeight="107.0" prefWidth="215.0">
+               <children>
+                  <Label layoutX="86.0" layoutY="22.0" prefHeight="43.0" prefWidth="108.0" text="DAPAT" textFill="#3a5b27">
+                     <font>
+                        <Font name="Arial Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="106.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../view/img/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="-4.0" layoutY="211.0" prefHeight="163.0" prefWidth="219.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="219.0" text="Trang chủ" textFill="#06181feb">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="80.0" prefWidth="219.0" style="-fx-background-color: #A7E8BD; -fx-background-radius: 5;" text="Danh sách đơn hàng" textFill="#06181fea">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="80.0" prefWidth="219.0" text="Thông tin site" textFill="#06181fea">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="3.0" layoutY="647.0" prefHeight="46.0" prefWidth="207.0">
+               <children>
+                  <HBox fx:id="logout" alignment="CENTER" onMouseClicked="#logout" prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../sales/view/images/logout.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

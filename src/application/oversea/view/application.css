@@ -1,0 +1,77 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.btn {
+	-fx-background-color: #FFF;
+	-fx-border-color: #07301a;
+    -fx-border-width: 0.2px;
+    
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 5, 0, 0, 0);
+}
+
+.custom-combobox {
+    -fx-background-color: #FFF;
+    -fx-border-color: #16243D;
+    -fx-border-width: 0.2px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 5, 0, 0, 0);
+}
+
+.custom-combobox .list-cell {
+    -fx-text-fill: blue;
+}
+
+.header {
+	-fx-border-radius: 0 0 0 0;
+	-fx-border-color: #16243D;
+    -fx-border-width: 0 0 0.1 0 ;
+     -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+.sider {
+	-fx-background-radius: 20 0 0 20;
+	-fx-border-color: #16243D;
+    -fx-border-width: 0.1px;
+     -fx-border-style: solid;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+}
+
+.containerVBox{
+
+	 -fx-background-color:  #FFFF;
+	-fx-border-color: #F5F5F5;
+    -fx-border-width: 0.03px;
+     -fx-border-style: solid;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+.listItemOfSite{
+	-fx-border-color: gray;
+    -fx-border-width: 0.5px;
+    -fx-border-style: solid;
+}
+
+.aHeader{
+	-fx-border-color: gray;
+    -fx-border-width: 0.5px;
+    -fx-border-style: solid;
+}
+
+.button {
+	 -fx-background-color:  #F5F5F5;
+	-fx-border-color: #F5F5F5;
+    -fx-border-width: 0.03px;
+     -fx-border-style: solid;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+
+.single{
+	 -fx-border-width: 0 0 0.1 0;
+	  -fx-border-color: #000000;
+}
+
+.search_btn{
+	-fx-background-color: #357D5D;
+}
+
+.search_btn:pressed, :detailButton:pressed{
+	-fx-background-color: #555555;
+}
+

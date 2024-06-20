@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="850.0" style="-fx-background-color: #ffffff;" styleClass="containerVBox" stylesheets="@application.css">
+         <children>
+            <Label fx:id="stt" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="50.0" text="1">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="merchandiseCode" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="MH20210852">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="merchandiseName" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Đồng hồ" />
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;" />
+            <Label fx:id="quantity" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="100.0" text="20">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;" />
+            <Label fx:id="unit" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="100.0" text="chiếc" />
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="mean" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="Tàu">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;" />
+            <Label fx:id="orderStatus" alignment="CENTER" prefHeight="25.0" prefWidth="150.0" style="-fx-background-radius: 0; -fx-background-color: #FFD9CF;" text="Đang vận chuyển">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" style="-fx-background-color: #f5f5f5;" />
+            <Label fx:id="updateStatusButton" alignment="CENTER" ellipsisString="" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #D5E4C3; -fx-background-radius: 30;" text="Cập nhật" translateX="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

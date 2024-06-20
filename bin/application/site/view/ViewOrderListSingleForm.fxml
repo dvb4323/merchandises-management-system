@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" layoutX="-1.0" prefHeight="40.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="stt" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="50.0" text="1">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="orderId" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="MH20210852">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="numberOfItem" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="150.0" text="20">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" />
+            <Label fx:id="orderListStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="120.0" text="Chờ xử lý">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="2.0" />
+            <Label fx:id="action" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="120.0" style="-fx-background-radius: 100; -fx-background-color: #8DA47E;" text="Xem " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
